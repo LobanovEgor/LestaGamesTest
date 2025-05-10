@@ -42,7 +42,7 @@ class Boat:
         self.oars['right'].in_water = False
 
     def embark(self):
-        if self.passengers + 1 < self.capacity:
+        if self.passengers + 1 <= self.capacity:
             self.passengers += 1
             self.speed_increment -= self.passengers / 10
         else:
